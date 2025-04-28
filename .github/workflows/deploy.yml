@@ -21,14 +21,15 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
             
-            cd /var/XpenseTrax/
-            rm -rf /var/XpenseTrax/
-            git clone https://github.com/subiczadrian/XpenseTrax
+            sudo rm -rf /var/XpenseTrax/
+            sudo rm -rf /home/XpenseTrax/
+            cd /home/
+            sudo git clone https://github.com/subiczadrian/XpenseTrax XpenseTrax
+
             cd /home/XpenseTrax/backend/XpenseTrax.API/
+            sudo dotnet publish -o /var/XpenseTrax/backend/publish
 
-            sudo dotnet -o /var/XpenseTrax/backend/publish
-
-            cp -r /home/XpenseTrax/ /var/XpenseTrax/frontend
+            sudo cp -r /home/XpenseTrax/frontend /var/XpenseTrax/frontend
 
             echo "Deployment complete!"
           EOF
