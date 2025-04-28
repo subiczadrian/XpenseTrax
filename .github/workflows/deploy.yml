@@ -15,14 +15,14 @@ jobs:
 
       - name: Deploy project
         run: |
-          echo "${{ secrets.PSWD }}" | sudo rm -rf /var/XpenseTrax/
-          echo "${{ secrets.PSWD }}" | sudo rm -rf /home/XpenseTrax/
+          echo "${{ secrets.PSWD }}" | sudo -S rm -rf /var/XpenseTrax/
+          echo "${{ secrets.PSWD }}" | sudo -S rm -rf /home/XpenseTrax/
           cd /home/
-          echo "${{ secrets.PSWD }}" | sudo git clone https://github.com/subiczadrian/XpenseTrax XpenseTrax
+          echo "${{ secrets.PSWD }}" | sudo -S git clone https://github.com/subiczadrian/XpenseTrax XpenseTrax
 
           cd /home/XpenseTrax/backend/XpenseTrax.API/
-          echo "${{ secrets.PSWD }}" | sudo dotnet publish -o /var/XpenseTrax/backend/publish
+          echo "${{ secrets.PSWD }}" | sudo -S dotnet publish -o /var/XpenseTrax/backend/publish
 
-          echo "${{ secrets.PSWD }}" | sudo cp -r /home/XpenseTrax/frontend /var/XpenseTrax/frontend
+          echo "${{ secrets.PSWD }}" | sudo -S cp -r /home/XpenseTrax/frontend /var/XpenseTrax/frontend
 
           echo "Deployment complete!"
