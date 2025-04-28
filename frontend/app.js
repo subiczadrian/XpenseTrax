@@ -255,12 +255,12 @@ function renderExpenses() {
 
     const saveButton = document.createElement("button");
     saveButton.textContent = "Save";
-    saveButton.classList.add("btn", "btn-success");
+    saveButton.classList.add("btn", "btn-success", "px-3");
     saveButton.onclick = () => saveExpense(index);
 
     const cancelButton = document.createElement("button");
     cancelButton.textContent = "Cancel";
-    cancelButton.classList.add("btn", "btn-dark");
+    cancelButton.classList.add("btn", "btn-dark", "px-3");
     cancelButton.onclick = () => cancelEdit(index);
 
     editActionsCell.appendChild(saveButton);
