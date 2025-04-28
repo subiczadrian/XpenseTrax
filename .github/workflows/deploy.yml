@@ -12,15 +12,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up SSH key
-        uses: webfactory/ssh-agent@v0.5.3
-        with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Test SSH connection
+        run: |
+          sshpass -p ${{ secrets.PSWD }} ssh -v -o StrictHostKeyChecking=no -p 22 ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "echo 'SSH connection successful!'"
 
       - name: Copy repository to server
-        run: |
-          sshpass -p ${{ secrets.PSWD }} ssh -v -o StrictHostKeyChecking=no -p 22 ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
-            
+        run: |            
             sudo rm -rf /var/XpenseTrax/
             sudo rm -rf /home/XpenseTrax/
             cd /home/
