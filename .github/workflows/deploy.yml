@@ -13,17 +13,32 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Deploy project
+      - name: Clone project
         run: |
           echo "${{ secrets.PSWD }}" | sudo -S rm -rf /var/XpenseTrax/
           echo "${{ secrets.PSWD }}" | sudo -S rm -rf /home/XpenseTrax/
           cd /home/
           echo "${{ secrets.PSWD }}" | sudo -S git clone https://github.com/subiczadrian/XpenseTrax XpenseTrax
 
+      - name: Publishing backend
+        run: |
           cd /home/XpenseTrax/backend/XpenseTrax.API/
           echo "${{ secrets.PSWD }}" | sudo -S dotnet publish -o /var/XpenseTrax/backend/publish
           echo "${{ secrets.PSWD }}" | sudo -S cp /home/XpenseTrax/backend/XpenseTrax.API/expenses.db /var/XpenseTrax/backend/publish/
 
+      - name: Setting the permissions
+        run: |
+          echo "${{ secrets.PSWD }}" | sudo -S chown -R ubuntu-server:ubuntu-server /var/XpenseTrax/
+          echo "${{ secrets.PSWD }}" | sudo -S chmod 755 /var/XpenseTrax/
+          echo "${{ secrets.PSWD }}" | sudo -S chmod 644 /var/XpenseTrax/backend/publish/expenses.db
+
+      - name: Restarting services
+        run: |
+          echo "${{ secrets.PSWD }}" | sudo -S systemctl restart XpenseTrax-backend.service
+          echo "${{ secrets.PSWD }}" | sudo -S systemctl restart nginx.service
+
+      - name: Publishing frontend
+        run: |
           echo "${{ secrets.PSWD }}" | sudo -S cp -r /home/XpenseTrax/frontend /var/XpenseTrax/frontend
 
           echo "Deployment complete!"
