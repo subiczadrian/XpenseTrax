@@ -174,7 +174,9 @@ function renderExpenses() {
     row.id = `expense-${index}`;
 
     const amountCell = document.createElement("td");
-    amountCell.textContent = Number(expense.amount).toLocaleString("hu-HU");
+    amountCell.textContent = Number(`${expense.amount} Ft`).toLocaleString(
+      "hu-HU"
+    );
 
     const descriptionCell = document.createElement("td");
     descriptionCell.textContent = expense.description;
