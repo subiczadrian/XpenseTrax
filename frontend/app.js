@@ -1,6 +1,6 @@
-console.log("app.js loaded correctly!");
+const isDev = window.location.hostname === "127.0.0.1";
 
-const apiUrl = "http://192.168.0.107/api"; // API alap URL
+const apiUrl = isDev ? "http://127.0.0.1:5000/api" : "/api";
 
 let expenses = [];
 let salary = 0;
@@ -11,7 +11,7 @@ window.onload = async () => {
 };
 
 async function fetchSalary() {
-  const response = await fetch("/api/salary");
+  const response = await fetch(`${apiUrl}/salary`);
   if (response.ok) {
     const data = await response.json();
     salary = data.amount;
@@ -31,7 +31,7 @@ async function setSalary() {
     return;
   }
 
-  await fetch("/api/salary", {
+  await fetch(`${apiUrl}/salary`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ amount: salary }),
@@ -44,7 +44,7 @@ async function setSalary() {
 }
 
 async function fetchExpenses() {
-  const response = await fetch("/api/expenses");
+  const response = await fetch(`${apiUrl}/expenses`);
   if (response.ok) {
     expenses = await response.json();
     renderExpenses();
@@ -62,7 +62,7 @@ async function addExpense() {
     return;
   }
 
-  await fetch("/api/expenses", {
+  await fetch(`${apiUrl}/expenses`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ amount, description, isPaid }),
