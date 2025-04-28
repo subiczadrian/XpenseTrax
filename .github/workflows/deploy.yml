@@ -1,4 +1,4 @@
-name: Deploy XpenseTrax to Server
+name: Deploy XpenseTrax to the server
 
 on:
   push:
