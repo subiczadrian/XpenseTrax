@@ -17,16 +17,15 @@ jobs:
           sshpass -p ${{ secrets.PSWD }} ssh -v -o StrictHostKeyChecking=no -p 22 ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "echo 'SSH connection successful!'"
 
       - name: Copy repository to server
-        run: |            
-            sudo rm -rf /var/XpenseTrax/
-            sudo rm -rf /home/XpenseTrax/
-            cd /home/
-            sudo git clone https://github.com/subiczadrian/XpenseTrax XpenseTrax
+        run: |
+          sudo rm -rf /var/XpenseTrax/
+          sudo rm -rf /home/XpenseTrax/
+          cd /home/
+          sudo git clone https://github.com/subiczadrian/XpenseTrax XpenseTrax
 
-            cd /home/XpenseTrax/backend/XpenseTrax.API/
-            sudo dotnet publish -o /var/XpenseTrax/backend/publish
+          cd /home/XpenseTrax/backend/XpenseTrax.API/
+          sudo dotnet publish -o /var/XpenseTrax/backend/publish
 
-            sudo cp -r /home/XpenseTrax/frontend /var/XpenseTrax/frontend
+          sudo cp -r /home/XpenseTrax/frontend /var/XpenseTrax/frontend
 
-            echo "Deployment complete!"
-          EOF
+          echo "Deployment complete!"
