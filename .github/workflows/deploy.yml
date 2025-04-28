@@ -4,9 +4,14 @@ on:
   push:
     branches:
       - master
+  pull_request:
+    types: [closed]
+    branches:
+      - master
 
 jobs:
   deploy:
+    if: github.event.pull_request.merged == true || github.event_name == 'push'
     runs-on: self-hosted
 
     steps:
@@ -24,13 +29,6 @@ jobs:
         run: |
           cd /home/XpenseTrax/backend/XpenseTrax.API/
           echo "${{ secrets.PSWD }}" | sudo -S dotnet publish -o /var/XpenseTrax/backend/publish
-          echo "${{ secrets.PSWD }}" | sudo -S cp /home/XpenseTrax/backend/XpenseTrax.API/expenses.db /var/XpenseTrax/backend/publish/
-
-      - name: Setting the permissions
-        run: |
-          echo "${{ secrets.PSWD }}" | sudo -S chown -R ubuntu-server:ubuntu-server /var/XpenseTrax/
-          echo "${{ secrets.PSWD }}" | sudo -S chmod 755 /var/XpenseTrax/
-          echo "${{ secrets.PSWD }}" | sudo -S chmod 644 /var/XpenseTrax/backend/publish/expenses.db
 
       - name: Restarting services
         run: |
