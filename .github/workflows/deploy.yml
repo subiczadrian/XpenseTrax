@@ -19,7 +19,7 @@ jobs:
 
       - name: Copy repository to server
         run: |
-          ssh -v -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
+          sshpass -p ${{ secrets.PSWD }} ssh -v -o StrictHostKeyChecking=no -p 22 ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
             
             sudo rm -rf /var/XpenseTrax/
             sudo rm -rf /home/XpenseTrax/
