@@ -5,9 +5,7 @@ const apiUrl = isDev ? "http://127.0.0.1:5000/api" : "/api";
 let expenses = [];
 let salary = 0;
 
-window.onload = initApp;
-
-async function initApp() {
+window.onload = async () => {
   let retries = 5;
   const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
@@ -28,7 +26,7 @@ async function initApp() {
   alert(
     "Unable to connect to the backend after multiple attempts. Please refresh the page later."
   );
-}
+};
 
 async function fetchSalary() {
   const response = await fetch(`${apiUrl}/salary`);
