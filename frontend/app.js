@@ -6,26 +6,8 @@ let expenses = [];
 let salary = 0;
 
 window.onload = async () => {
-  let retries = 5;
-  const delay = (ms) => new Promise((res) => setTimeout(res, ms));
-
-  while (retries > 0) {
-    try {
-      console.log(`Trying to connect to backend... (${6 - retries}/5)`);
-      await fetchAndRenderSalary();
-      await fetchAndRenderExpenses();
-      console.log("Connected to backend successfully.");
-      return;
-    } catch (error) {
-      console.warn("Backend not ready, retrying in 2s...");
-      retries--;
-      await delay(2000);
-    }
-  }
-
-  alert(
-    "Unable to connect to the backend after multiple attempts. Please refresh the page later."
-  );
+  await fetchSalary();
+  await fetchExpenses();
 };
 
 async function fetchSalary() {
