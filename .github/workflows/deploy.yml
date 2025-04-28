@@ -7,16 +7,13 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Test SSH connection
-        run: |
-          sshpass -p ${{ secrets.PSWD }} ssh -v -o StrictHostKeyChecking=no -p 22 ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "echo 'SSH connection successful!'"
-
-      - name: Copy repository to server
+      - name: Deploy project
         run: |
           sudo rm -rf /var/XpenseTrax/
           sudo rm -rf /home/XpenseTrax/
