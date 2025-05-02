@@ -127,7 +127,7 @@ function renderSalary() {
 function updateRemainingBalance() {
   const remainingDisplay = document.getElementById("remainingBalance");
   const totalPaidExpenses = expenses
-    .filter((expense) => expense.isPaid) // csak a kifizetett tételeket vesszük figyelembe
+    .filter((expense) => expense.isPaid)
     .reduce((sum, expense) => sum + expense.amount, 0);
 
   const remaining = salary - totalPaidExpenses;

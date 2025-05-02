@@ -44,6 +44,8 @@ namespace XpenseTrax.API.Controllers
                 return NotFound();
             }
 
+            expense.Amount = updatedExpense.Amount;
+            expense.Description = updatedExpense.Description;
             expense.IsPaid = updatedExpense.IsPaid;
             _context.Entry(expense).State = EntityState.Modified;
             await _context.SaveChangesAsync();
