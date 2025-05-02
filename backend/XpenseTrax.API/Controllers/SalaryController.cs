@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using XpenseTrax.API.Data;
 using XpenseTrax.API.Models;
 
@@ -15,18 +16,23 @@ namespace XpenseTrax.API.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetSalary()
+        public async Task<IActionResult> GetSalary()
         {
-            var salary = _context.Salaries.FirstOrDefault();
-            if (salary == null) return NotFound();
+            var salary = await _context.Salaries.FirstOrDefaultAsync();
+
+            if (salary == null)
+                return NotFound();
+
             return Ok(salary);
         }
 
         [HttpPost]
-        public IActionResult SetSalary(Salary salary)
+        public async Task<IActionResult> SetSalary(Salary salary)
         {
-            _context.Salaries.Add(salary);
-            _context.SaveChanges();
+            await _context.Salaries.AddAsync(salary);
+
+            await _context.SaveChangesAsync();
+
             return Ok(salary);
         }
     }

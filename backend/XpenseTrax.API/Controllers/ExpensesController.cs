@@ -16,17 +16,19 @@ namespace XpenseTrax.API.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetExpenses()
+        public async Task<IActionResult> GetExpenses()
         {
-            var expenses = _context.Expenses.ToList();
+            var expenses = await _context.Expenses.ToListAsync();
+
             return Ok(expenses);
         }
 
         [HttpPost]
-        public IActionResult CreateExpense(Expense expense)
+        public async Task<IActionResult> CreateExpense(Expense expense)
         {
-            _context.Expenses.Add(expense);
-            _context.SaveChanges();
+            await _context.Expenses.AddAsync(expense);
+            await _context.SaveChangesAsync();
+
             return Ok(expense);
         }
 
@@ -47,6 +49,7 @@ namespace XpenseTrax.API.Controllers
             expense.Amount = updatedExpense.Amount;
             expense.Description = updatedExpense.Description;
             expense.IsPaid = updatedExpense.IsPaid;
+
             _context.Entry(expense).State = EntityState.Modified;
             await _context.SaveChangesAsync();
 
@@ -55,13 +58,14 @@ namespace XpenseTrax.API.Controllers
 
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteExpense(int id)
+        public async Task<IActionResult> DeleteExpense(int id)
         {
-            var expense = _context.Expenses.Find(id);
-            if (expense == null) return NotFound();
+            var expense = await _context.Expenses.FindAsync(id);
+            if (expense == null)
+                return NotFound();
 
             _context.Expenses.Remove(expense);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
             return NoContent();
         }
     }
