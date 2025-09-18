@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using XpenseTrax.API.Data;
 using XpenseTrax.API.Models;
@@ -29,7 +29,19 @@ namespace XpenseTrax.API.Controllers
         [HttpPost]
         public async Task<IActionResult> SetSalary(Salary salary)
         {
-            await _context.Salaries.AddAsync(salary);
+            var existing = await _context.Salaries.FirstOrDefaultAsync();
+
+            if (existing == null)
+            {
+                // még nincs salary → új létrehozása
+                await _context.Salaries.AddAsync(salary);
+            }
+            else
+            {
+                // már van → frissítjük
+                existing.Amount = salary.Amount; // vagy ami a property neve
+                _context.Salaries.Update(existing);
+            }
 
             await _context.SaveChangesAsync();
 
