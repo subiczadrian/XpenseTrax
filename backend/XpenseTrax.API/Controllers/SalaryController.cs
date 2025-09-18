@@ -40,7 +40,7 @@ namespace XpenseTrax.API.Controllers
             {
                 // már van → frissítjük
                 existing.Amount = salary.Amount; // vagy ami a property neve
-                _context.Salaries.Update(existing);
+                //_context.Salaries.Update(existing);
             }
 
             await _context.SaveChangesAsync();
