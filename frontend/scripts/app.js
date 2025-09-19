@@ -37,7 +37,6 @@ async function fetchSalary() {
     }
 }
 
-// Fizetés beállítása
 async function setSalary() {
     const salaryInputElement = document.getElementById("salaryAmount");
     const salaryInput = salaryInputElement.value;

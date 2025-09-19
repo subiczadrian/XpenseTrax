@@ -21,7 +21,7 @@ logoutButton.addEventListener('click', async () => {
 
         if (response.ok) {
             sessionStorage.clear(); // minden login adat törlése
-            window.location.href = '/login.html';
+            window.location.href = '../index.html';
         } else {
             const err = await response.text();
             alert('Hiba a kijelentkezés során: ' + err);

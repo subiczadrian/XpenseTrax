@@ -19,12 +19,12 @@ loginForm.addEventListener('submit', async function (e) {
 
     if (response.ok) {
         const data = await response.json();
-        console.log(data);
+        console.log("Login response:", data);
+
         sessionStorage.setItem('loggedIn', 'true');
-        //sessionStorage.setItem('token', data.Token);
+        sessionStorage.setItem('token', data.token);   // <- kisbetűs
+        sessionStorage.setItem('username', username);
+
         window.location.href = 'pages/home.html';
-    } else {
-        const err = await response.text();
-        loginMessage.textContent = err || 'Wrong username or password';
     }
 });
