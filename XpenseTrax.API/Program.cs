@@ -11,8 +11,19 @@ builder.WebHost.ConfigureKestrel(options =>
 
 // Add services
 builder.Services.AddControllers();
+
+// Read connection string from config by default
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+// If running in Docker, override to the container path
+var isDocker = Environment.GetEnvironmentVariable("DOTNET_RUNNING_IN_CONTAINER") == "true";
+if (isDocker)
+{
+    connectionString = "Data Source=/app/expenses.db";
+}
+
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlite(connectionString));
 
 builder.Services.AddCors(options =>
 {
@@ -28,6 +39,9 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 
 // Configure
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
 app.UseCors("AllowAll");
 app.MapControllers();
 app.Run();

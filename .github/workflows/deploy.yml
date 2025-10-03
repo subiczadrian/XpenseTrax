@@ -1,4 +1,4 @@
-name: Deploy XpenseTrax to the server
+name: Deploy XpenseTrax.API to the server
 
 on:
   push:
@@ -35,7 +35,7 @@ jobs:
           echo "${{ secrets.PSWD }}" | sudo -S systemctl restart XpenseTrax-backend.service
           echo "${{ secrets.PSWD }}" | sudo -S systemctl restart nginx.service
 
-      - name: Publishing frontend
+      - name: Publishing wwwroot
         run: |
           echo "${{ secrets.PSWD }}" | sudo -S cp -r /home/XpenseTrax/frontend /var/XpenseTrax/frontend
 
