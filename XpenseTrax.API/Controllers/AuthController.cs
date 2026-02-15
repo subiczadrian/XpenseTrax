@@ -8,7 +8,6 @@ using static XpenseTrax.API.Models.User;
 [Route("api/[controller]")]
 public class AuthController : ControllerBase
 {
-    // Két felhasználó, hash-elt jelszóval
     private static List<User> _users = new()
     {
         new User { Username = "adrian", PasswordHash = "f3e7e7312129014cfc89643bef8387e40686bd75" },
