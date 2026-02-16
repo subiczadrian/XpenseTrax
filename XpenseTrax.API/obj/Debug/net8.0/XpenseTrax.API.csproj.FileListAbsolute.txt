@@ -131,4 +131,3 @@ C:\Users\Acer\RiderProjects\XpenseTrax\XpenseTrax.API\obj\Debug\net8.0\refint\Xp
 C:\Users\Acer\RiderProjects\XpenseTrax\XpenseTrax.API\obj\Debug\net8.0\XpenseTrax.API.pdb
 C:\Users\Acer\RiderProjects\XpenseTrax\XpenseTrax.API\obj\Debug\net8.0\XpenseTrax.API.genruntimeconfig.cache
 C:\Users\Acer\RiderProjects\XpenseTrax\XpenseTrax.API\obj\Debug\net8.0\ref\XpenseTrax.API.dll
-C:\Users\Acer\RiderProjects\XpenseTrax\XpenseTrax.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

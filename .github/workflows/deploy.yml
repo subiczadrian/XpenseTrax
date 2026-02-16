@@ -38,6 +38,6 @@ jobs:
       - name: Start Docker Container
         run: |
           echo "${{ secrets.PSWD }}" | sudo -S docker run -d   -p 8080:5000   --name xpensetrax_container   xpensetrax
-        
+
       - name: Deployment complete
         run: echo "Deployment complete! Application is live on port 8080."

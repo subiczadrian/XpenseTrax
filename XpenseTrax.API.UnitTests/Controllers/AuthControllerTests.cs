@@ -1,19 +1,4 @@
-﻿using Microsoft.AspNetCore;
-using Microsoft.AspNetCore.Identity.Data;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security;
-using System.Security.Cryptography;
-using System.Text;
-using XpenseTrax.API;
-using XpenseTrax.API.Controllers;
-using XpenseTrax.API.Models;
-
-namespace XpenseTrax.API.UnitTests
+﻿namespace XpenseTrax.API.UnitTests
 {
     /// <summary>
     /// Tests for AuthController.Login behavior: valid credentials, invalid username, invalid password,
