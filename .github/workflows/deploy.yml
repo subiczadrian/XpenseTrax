@@ -25,13 +25,23 @@ jobs:
           cd /home/
           echo "${{ secrets.PSWD }}" | sudo -S -n git clone https://github.com/subiczadrian/XpenseTrax XpenseTrax
 
-      - name: Building Docker Container
+      - name: Build Docker Container
         run: |
           cd /home/XpenseTrax/
           echo "${{ secrets.PSWD }}" | sudo -S -n docker build -t xpensetrax .
 
-      - name: Starting Docker Container
+      - name: Stop & Remove Old Container
         run: |
-          echo "${{ secrets.PSWD }}" | sudo -S -n docker run -d -p 5000:5000 xpensetrax
-          
-          echo "Deployment complete!"
+          echo "${{ secrets.PSWD }}" | sudo -S -n docker stop xpensetrax_container || true
+          echo "${{ secrets.PSWD }}" | sudo -S -n docker rm xpensetrax_container || true
+
+      - name: Start Docker Container
+        run: |
+          echo "${{ secrets.PSWD }}" | sudo -S -n docker run -d \
+            -p 8080:80 \
+            -e ASPNETCORE_URLS="http://+:80" \
+            --name xpensetrax_container \
+            xpensetrax
+
+      - name: Deployment complete
+        run: echo "Deployment complete! Application is live on port 8080."
