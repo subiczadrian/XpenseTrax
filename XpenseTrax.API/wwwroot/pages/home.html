@@ -11,7 +11,7 @@
     />
     <link href="../style.css" rel="stylesheet"/>
 </head>
-<body class="bg-dark-subtle">
+<body class="bg-dark-subtle" onload="renderMonth()">
 <div class="container custom-container py-4">
     <section class="card mb-4 bg-dark">
         <nav class="navbar bg-dark">
@@ -86,7 +86,7 @@
     <!-- Data Overview Section -->
     <section class="card bg-dark">
         <div class="card-body">
-            <h2 class="card-title h4 mb-3 text-light">Data Overview</h2>
+            <h2 class="card-title h4 mb-3 text-light" id="monthDisplay">Data Overview</h2>
             <div class="mb-2 fw-bold text-light" id="salaryDisplay"></div>
             <div class="mb-3 fw-bold text-light" id="remainingBalance"></div>
 

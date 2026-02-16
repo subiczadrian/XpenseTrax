@@ -16,6 +16,7 @@ window.onload = async () => {
         return;
     }
 
+    renderMonth();
     await fetchSalary(token, username);
     await fetchExpenses(token, username);
 };
@@ -189,6 +190,15 @@ function updateRemainingBalance() {
     remainingDisplay.innerHTML = `Remaining Balance: ${remaining.toLocaleString("hu-HU")} Ft`;
 }
 
+function renderMonth() {
+    const monthDisplay = document.getElementById("monthDisplay");
+    const currentDate = new Date();
+    const monthYear = currentDate.toLocaleDateString("en-US", { 
+        year: 'numeric', 
+        month: 'long' 
+    });
+    monthDisplay.innerHTML = `Month: ${monthYear}`;
+}
 
 function renderExpenses() {
     const expensesContainer = document.getElementById("expensesContainer");

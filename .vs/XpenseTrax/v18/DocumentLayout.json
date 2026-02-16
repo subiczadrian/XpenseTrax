@@ -3,20 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Acer\\RiderProjects\\XpenseTrax\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{12345678-ABCD-4321-EFAB-567890ABCDEF}|XpenseTrax.API\\XpenseTrax.API.csproj|c:\\users\\acer\\riderprojects\\xpensetrax\\xpensetrax.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12345678-ABCD-4321-EFAB-567890ABCDEF}|XpenseTrax.API\\XpenseTrax.API.csproj|solutionrelative:xpensetrax.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B16D776C-D301-4998-8C5E-0D94CBC2256A}|XpenseTrax.API.UnitTests\\XpenseTrax.API.UnitTests.csproj|c:\\users\\acer\\riderprojects\\xpensetrax\\xpensetrax.api.unittests\\controllers\\expensescontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B16D776C-D301-4998-8C5E-0D94CBC2256A}|XpenseTrax.API.UnitTests\\XpenseTrax.API.UnitTests.csproj|solutionrelative:xpensetrax.api.unittests\\controllers\\expensescontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B16D776C-D301-4998-8C5E-0D94CBC2256A}|XpenseTrax.API.UnitTests\\XpenseTrax.API.UnitTests.csproj|c:\\users\\acer\\riderprojects\\xpensetrax\\xpensetrax.api.unittests\\controllers\\authcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B16D776C-D301-4998-8C5E-0D94CBC2256A}|XpenseTrax.API.UnitTests\\XpenseTrax.API.UnitTests.csproj|solutionrelative:xpensetrax.api.unittests\\controllers\\authcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B16D776C-D301-4998-8C5E-0D94CBC2256A}|XpenseTrax.API.UnitTests\\XpenseTrax.API.UnitTests.csproj|c:\\users\\acer\\riderprojects\\xpensetrax\\xpensetrax.api.unittests\\controllers\\salarycontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B16D776C-D301-4998-8C5E-0D94CBC2256A}|XpenseTrax.API.UnitTests\\XpenseTrax.API.UnitTests.csproj|solutionrelative:xpensetrax.api.unittests\\controllers\\salarycontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{12345678-ABCD-4321-EFAB-567890ABCDEF}|XpenseTrax.API\\XpenseTrax.API.csproj|c:\\users\\acer\\riderprojects\\xpensetrax\\xpensetrax.api\\controllers\\salarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12345678-ABCD-4321-EFAB-567890ABCDEF}|XpenseTrax.API\\XpenseTrax.API.csproj|solutionrelative:xpensetrax.api\\controllers\\salarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{12345678-ABCD-4321-EFAB-567890ABCDEF}|XpenseTrax.API\\XpenseTrax.API.csproj|c:\\users\\acer\\riderprojects\\xpensetrax\\xpensetrax.api\\controllers\\expensescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12345678-ABCD-4321-EFAB-567890ABCDEF}|XpenseTrax.API\\XpenseTrax.API.csproj|solutionrelative:xpensetrax.api\\controllers\\expensescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12345678-ABCD-4321-EFAB-567890ABCDEF}|XpenseTrax.API\\XpenseTrax.API.csproj|c:\\users\\acer\\riderprojects\\xpensetrax\\xpensetrax.api\\controllers\\salarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12345678-ABCD-4321-EFAB-567890ABCDEF}|XpenseTrax.API\\XpenseTrax.API.csproj|solutionrelative:xpensetrax.api\\controllers\\salarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{12345678-ABCD-4321-EFAB-567890ABCDEF}|XpenseTrax.API\\XpenseTrax.API.csproj|c:\\users\\acer\\riderprojects\\xpensetrax\\xpensetrax.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12345678-ABCD-4321-EFAB-567890ABCDEF}|XpenseTrax.API\\XpenseTrax.API.csproj|solutionrelative:xpensetrax.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12345678-ABCD-4321-EFAB-567890ABCDEF}|XpenseTrax.API\\XpenseTrax.API.csproj|c:\\users\\acer\\riderprojects\\xpensetrax\\xpensetrax.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12345678-ABCD-4321-EFAB-567890ABCDEF}|XpenseTrax.API\\XpenseTrax.API.csproj|solutionrelative:xpensetrax.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12345678-ABCD-4321-EFAB-567890ABCDEF}|XpenseTrax.API\\XpenseTrax.API.csproj|c:\\users\\acer\\riderprojects\\xpensetrax\\xpensetrax.api\\wwwroot\\scripts\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{12345678-ABCD-4321-EFAB-567890ABCDEF}|XpenseTrax.API\\XpenseTrax.API.csproj|solutionrelative:xpensetrax.api\\wwwroot\\scripts\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12345678-ABCD-4321-EFAB-567890ABCDEF}|XpenseTrax.API\\XpenseTrax.API.csproj|c:\\users\\acer\\riderprojects\\xpensetrax\\xpensetrax.api\\actionfilters\\authtokenattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12345678-ABCD-4321-EFAB-567890ABCDEF}|XpenseTrax.API\\XpenseTrax.API.csproj|solutionrelative:xpensetrax.api\\actionfilters\\authtokenattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,49 +46,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Acer\\RiderProjects\\XpenseTrax\\XpenseTrax.API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "XpenseTrax.API\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Acer\\RiderProjects\\XpenseTrax\\XpenseTrax.API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "XpenseTrax.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAQwDgAAAAAAAAAAAAAAA==",
+              "Title": "ExpensesControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\RiderProjects\\XpenseTrax\\XpenseTrax.API.UnitTests\\Controllers\\ExpensesControllerTests.cs",
+              "RelativeDocumentMoniker": "XpenseTrax.API.UnitTests\\Controllers\\ExpensesControllerTests.cs",
+              "ToolTip": "C:\\Users\\Acer\\RiderProjects\\XpenseTrax\\XpenseTrax.API.UnitTests\\Controllers\\ExpensesControllerTests.cs",
+              "RelativeToolTip": "XpenseTrax.API.UnitTests\\Controllers\\ExpensesControllerTests.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T03:47:13.877Z",
+              "WhenOpened": "2026-02-16T04:14:29.847Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ExpensesController.cs",
-              "DocumentMoniker": "C:\\Users\\Acer\\RiderProjects\\XpenseTrax\\XpenseTrax.API\\Controllers\\ExpensesController.cs",
-              "RelativeDocumentMoniker": "XpenseTrax.API\\Controllers\\ExpensesController.cs",
-              "ToolTip": "C:\\Users\\Acer\\RiderProjects\\XpenseTrax\\XpenseTrax.API\\Controllers\\ExpensesController.cs",
-              "RelativeToolTip": "XpenseTrax.API\\Controllers\\ExpensesController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAswEkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T03:41:52.477Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "SalaryControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\Acer\\RiderProjects\\XpenseTrax\\XpenseTrax.API.UnitTests\\Controllers\\SalaryControllerTests.cs",
               "RelativeDocumentMoniker": "XpenseTrax.API.UnitTests\\Controllers\\SalaryControllerTests.cs",
               "ToolTip": "C:\\Users\\Acer\\RiderProjects\\XpenseTrax\\XpenseTrax.API.UnitTests\\Controllers\\SalaryControllerTests.cs",
               "RelativeToolTip": "XpenseTrax.API.UnitTests\\Controllers\\SalaryControllerTests.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAYwEMAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T03:41:32.093Z",
+              "WhenOpened": "2026-02-16T04:14:23.728Z",
               "EditorCaption": ""
             },
             {
@@ -79,9 +82,87 @@
               "RelativeDocumentMoniker": "XpenseTrax.API\\Controllers\\SalaryController.cs",
               "ToolTip": "C:\\Users\\Acer\\RiderProjects\\XpenseTrax\\XpenseTrax.API\\Controllers\\SalaryController.cs",
               "RelativeToolTip": "XpenseTrax.API\\Controllers\\SalaryController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T03:37:00.048Z",
+              "WhenOpened": "2026-02-16T04:09:41.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ExpensesController.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\RiderProjects\\XpenseTrax\\XpenseTrax.API\\Controllers\\ExpensesController.cs",
+              "RelativeDocumentMoniker": "XpenseTrax.API\\Controllers\\ExpensesController.cs",
+              "ToolTip": "C:\\Users\\Acer\\RiderProjects\\XpenseTrax\\XpenseTrax.API\\Controllers\\ExpensesController.cs",
+              "RelativeToolTip": "XpenseTrax.API\\Controllers\\ExpensesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T04:09:37.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\RiderProjects\\XpenseTrax\\XpenseTrax.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "XpenseTrax.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Acer\\RiderProjects\\XpenseTrax\\XpenseTrax.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "XpenseTrax.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T04:09:34.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\RiderProjects\\XpenseTrax\\XpenseTrax.API.UnitTests\\Controllers\\AuthControllerTests.cs",
+              "RelativeDocumentMoniker": "XpenseTrax.API.UnitTests\\Controllers\\AuthControllerTests.cs",
+              "ToolTip": "C:\\Users\\Acer\\RiderProjects\\XpenseTrax\\XpenseTrax.API.UnitTests\\Controllers\\AuthControllerTests.cs",
+              "RelativeToolTip": "XpenseTrax.API.UnitTests\\Controllers\\AuthControllerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T04:08:50.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthTokenAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\RiderProjects\\XpenseTrax\\XpenseTrax.API\\ActionFilters\\AuthTokenAttribute.cs",
+              "RelativeDocumentMoniker": "XpenseTrax.API\\ActionFilters\\AuthTokenAttribute.cs",
+              "ToolTip": "C:\\Users\\Acer\\RiderProjects\\XpenseTrax\\XpenseTrax.API\\ActionFilters\\AuthTokenAttribute.cs",
+              "RelativeToolTip": "XpenseTrax.API\\ActionFilters\\AuthTokenAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T04:08:01.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "app.js",
+              "DocumentMoniker": "C:\\Users\\Acer\\RiderProjects\\XpenseTrax\\XpenseTrax.API\\wwwroot\\scripts\\app.js",
+              "RelativeDocumentMoniker": "XpenseTrax.API\\wwwroot\\scripts\\app.js",
+              "ToolTip": "C:\\Users\\Acer\\RiderProjects\\XpenseTrax\\XpenseTrax.API\\wwwroot\\scripts\\app.js",
+              "RelativeToolTip": "XpenseTrax.API\\wwwroot\\scripts\\app.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-02-16T04:07:31.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\RiderProjects\\XpenseTrax\\XpenseTrax.API\\Program.cs",
+              "RelativeDocumentMoniker": "XpenseTrax.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Acer\\RiderProjects\\XpenseTrax\\XpenseTrax.API\\Program.cs",
+              "RelativeToolTip": "XpenseTrax.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T04:06:01.694Z",
               "EditorCaption": ""
             }
           ]
