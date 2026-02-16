@@ -20,24 +20,24 @@ jobs:
 
       - name: Clone project
         run: |
-          echo "${{ secrets.PSWD }}" | sudo rm -rf /var/XpenseTrax/
-          echo "${{ secrets.PSWD }}" | sudo rm -rf /home/XpenseTrax/
+          echo "${{ secrets.PSWD }}" | sudo -S rm -rf /var/XpenseTrax/
+          echo "${{ secrets.PSWD }}" | sudo -S rm -rf /home/XpenseTrax/
           cd /home/
-          echo "${{ secrets.PSWD }}" | sudo git clone https://github.com/subiczadrian/XpenseTrax XpenseTrax
+          echo "${{ secrets.PSWD }}" | sudo -S git clone https://github.com/subiczadrian/XpenseTrax XpenseTrax
 
       - name: Build Docker Container
         run: |
           cd /home/XpenseTrax/
-          echo "${{ secrets.PSWD }}" | sudo docker build -t xpensetrax .
+          echo "${{ secrets.PSWD }}" | sudo -S docker build -t xpensetrax .
 
       - name: Stop & Remove Old Container
         run: |
-          echo "${{ secrets.PSWD }}" | sudo docker stop xpensetrax_container || true
-          echo "${{ secrets.PSWD }}" | sudo docker rm xpensetrax_container || true
+          echo "${{ secrets.PSWD }}" | sudo -S docker stop xpensetrax_container || true
+          echo "${{ secrets.PSWD }}" | sudo -S docker rm xpensetrax_container || true
 
       - name: Start Docker Container
         run: |
-          echo "${{ secrets.PSWD }}" | sudo docker run -d \
+          echo "${{ secrets.PSWD }}" | sudo -S docker run -d \
             -p 8080:80 \
             -e ASPNETCORE_URLS="http://+:80" \
             --name xpensetrax_container \
