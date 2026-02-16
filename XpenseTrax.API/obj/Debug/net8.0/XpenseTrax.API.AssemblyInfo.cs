@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("XpenseTrax.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4d89f2cb805ec59e065038036b3ff261b40609b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+966685db1a99a208db99f35c29250c83092377c4")]
 [assembly: System.Reflection.AssemblyProductAttribute("XpenseTrax.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("XpenseTrax.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
