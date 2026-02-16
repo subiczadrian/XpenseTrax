@@ -7,7 +7,6 @@ const token = sessionStorage.getItem('token');
 const username = sessionStorage.getItem('username');
 const loginUrl = `../index.html`;
 
-// Ellenőrizzük a login státuszt
 window.onload = async () => {
     const token = sessionStorage.getItem('token');
     const username = sessionStorage.getItem('username');
