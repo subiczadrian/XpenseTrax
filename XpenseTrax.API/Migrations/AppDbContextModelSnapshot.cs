@@ -14,9 +14,9 @@ namespace XpenseTrax.API.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "8.0.15");
+            modelBuilder.HasAnnotation("ProductVersion", "8.0.20");
 
-            modelBuilder.Entity("XpenseTrax.Models.Expense", b =>
+            modelBuilder.Entity("XpenseTrax.API.Models.Expense", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -37,7 +37,7 @@ namespace XpenseTrax.API.Migrations
                     b.ToTable("Expenses");
                 });
 
-            modelBuilder.Entity("XpenseTrax.Models.Salary", b =>
+            modelBuilder.Entity("XpenseTrax.API.Models.Salary", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
