@@ -1,0 +1,71 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio cache/options
+.vs/
+.vscode/
+
+# Rider
+.idea/
+*.sln.iml
+*.swp
+*.swo
+
+# Build folders
+out/
+
+# NuGet
+*.nupkg
+*.snupkg
+NuGet.Config
+!.nuget/NuGet.Config
+.nuget/packages/
+.nuget/NuGet.exe
+.nuget/NuGet.targets
+
+# Package References
+project.lock.json
+project.assets.json
+/packages/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.user
+*.rsuser
+
+# Test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.trx
+
+# Rider specific
+.idea/
+*.sln.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local environment
+.env
+.env.local
+launchSettings.json
+
+# Application-specific
+appsettings.Development.json
+appsettings.Local.json
